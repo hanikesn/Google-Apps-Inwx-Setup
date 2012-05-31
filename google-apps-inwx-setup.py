@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 
 # This file is part of Google-Apps-Inwx-Setup.
 #
@@ -16,14 +16,14 @@
 # along with Google-Apps-Inwx-Setup. If not, see <http://www.gnu.org/licenses/>.
 __author__ = 'Steffen Hanikel'
 
-from inwx import inwx
+from inwx import domrobot
 import getpass
 
 def main():
     username = raw_input("Please enter your user name: ")
     password = getpass.getpass("Please enter your password: ")
 
-    inwx_conn = inwx('https://api.domrobot.com/xmlrpc', username, password, 'en', True, False)
+    inwx_conn = domrobot('https://api.domrobot.com/xmlrpc', username, password, 'en', True, False)
 
     domainname = raw_input("Please enter the domain name: ")
 
