@@ -23,7 +23,7 @@ def main():
     username = raw_input("Please enter your user name: ")
     password = getpass.getpass("Please enter your password: ")
 
-    inwx_conn = domrobot('https://api.domrobot.com/xmlrpc', username, password, 'en')
+    inwx_conn = domrobot('https://api.domrobot.com/xmlrpc/', username, password, 'en')
 
     domainname = raw_input("Please enter the domain name: ")
 
