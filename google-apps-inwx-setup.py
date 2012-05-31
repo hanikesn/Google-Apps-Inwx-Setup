@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python2.7
 
 # This file is part of Google-Apps-Inwx-Setup.
 #
